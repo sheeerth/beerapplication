@@ -6,7 +6,7 @@ This is Beer application
 
 if you want to run application in developer mode you must run:
 
-1. npm i
+1. npm install
 2. node server.js
 3. ng serve
 
