@@ -1,0 +1,7 @@
+{
+  "/posts": {
+    "target": "https://sandbox-api.brewerydb.com/v2/",
+    "secure": true,
+    "changeOrigin": true
+  }
+}

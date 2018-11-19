@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Options</h1>
+<div mat-dialog-content>
+  <section>
+    <h3 >Dark Mode</h3>
+    <mat-slide-toggle
+      [color]="'#000000'"
+      [checked]="darkMode"
+      (change)="modeChange($event)">
+      Dark Mode
+    </mat-slide-toggle>
+  </section>
+  <section>
+    <h3>How many beer display?</h3>
+    <mat-form-field>
+      <input matInput placeholder="Value" [value]="counter" [type]="'number'" (change)="counterChange($event)">
+    </mat-form-field>
+  </section>
+  <section>
+    <h3>How sort result?</h3>
+    <mat-form-field>
+      <mat-select placeholder="Priority" (selectionChange)="selectedChange($event)" [value]="sortBeer">
+        <mat-option *ngFor="let option of sortType" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </section>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+</div>
