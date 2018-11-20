@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import '~@angular/material/_theming';
+
+@include mat-core();
+.dark-theme {
+  // Dark theme
+  $app-dark-primary: mat-palette($mat-pink, 700);
+  $app-dark-accent: mat-palette($mat-blue-grey);
+  $app-dark-theme: mat-dark-theme($app-dark-primary, $app-dark-accent);
+
+  .background-theme{
+    background: #616161;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+  }
+
+  @include angular-material-theme($app-dark-theme);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+.mat-grid-tile .mat-figure{
+  align-items: unset !important;
+}
+
+.img-fluid{
+  width: 100%;
+}

@@ -1,0 +1,8 @@
+<mat-card class="bewery-card">
+  <mat-card-header class="bewery-header">
+    <app-dropdown [breweryList]="breweryList" class="bewery-dropdown" [breweryDefault]="breweryDefault"></app-dropdown>
+  </mat-card-header>
+  <mat-card-content>
+    <app-beer-list [beerList]="beerList" [beerFull]="beerFull" [counter]="counter"></app-beer-list>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,5 @@
+<mat-select placeholder="Brewery" (selectionChange)="selectBreweryChange($event)" [value]="breweryDefault.id">
+  <mat-option *ngFor="let brewery of breweryList" [value]="brewery.id">
+    {{brewery.nameShortDisplay}}
+  </mat-option>
+</mat-select>
